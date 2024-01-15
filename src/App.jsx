@@ -1,4 +1,10 @@
+import { Route, Routes } from "react-router-dom"
 import Navbar from "./Components/Navbar"
+import Home from "./Components/Home"
+import Comics from "./Components/Comics"
+import Characters from "./Components/Characters"
+import Movies from "./Components/Movies"
+import TvShows from "./Components/TvShows"
 
 
 
@@ -16,6 +22,13 @@ function App() {
   return (
     <>
         <Navbar/>
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/comics" element={<Comics/>}/>
+            <Route path="/characters" element={<Characters/>}/>
+            <Route path="/movies" element={<Movies/>}/>
+            <Route path="/tvshows" element={<TvShows/>}/>
+        </Routes>
     </>
   )
 }

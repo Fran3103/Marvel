@@ -11,7 +11,8 @@ export default {
         'semi': '#0C1821',
         'blue':'#1B2A41',
         'blueLight':'#324A5F',
-        'gray':'#CCC9DC'
+        'gray':'#CCC9DC',
+        'transparent':'rgba(0,0,0,0.4)'
       }
     },
     plugins: [],
