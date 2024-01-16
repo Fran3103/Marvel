@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
+
 const Navbar = () => {
 
     const [activo, setActivo] = useState(false)
@@ -15,7 +16,7 @@ const Navbar = () => {
     }
   return (
     <nav className="p-2 h-20 w-screen fixed    z-50 ">
-        <div className="m-auto max-w-[1240px] ">
+        <div className="m-auto max-w-[1240px] flex items-center justify-between">
            <Link to='/'> <img src={logo} alt="logo" className="hidden w-20 md:w-40 md:block"/></Link>
             <div className="flex justify-between items-center w-full md:justify-center md:items-center z-50">
                 <Link to='/'><img src={logo} alt="logo" className="w-20 md:w-40 md:hidden"/></Link>
@@ -39,10 +40,10 @@ const Navbar = () => {
                     </ul>
             </div>
            
+           
         </div>
+
         
-
-
     </nav>
   )
 }
