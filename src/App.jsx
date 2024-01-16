@@ -5,6 +5,7 @@ import Comics from "./Components/Comics"
 import Characters from "./Components/Characters"
 import Movies from "./Components/Movies"
 import TvShows from "./Components/TvShows"
+import Search from "./Components/Search"
 
 
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
         <Navbar/>
+        <Search/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/comics" element={<Comics/>}/>
